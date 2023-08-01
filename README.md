@@ -1,2 +1,2 @@
 # Online-diploma-learn-in-depth
-it
+hello mate you can see all of my work during the diploma
