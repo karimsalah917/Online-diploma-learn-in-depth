@@ -5,19 +5,31 @@
  *      Author: karim
  */
 /*  program info
- * this program used to check whether the inputed letter is vowel or not
+ * this program used to find the largest number among three numbers
  * */
 #include<stdio.h>
 int main(){
 	setvbuf(stdout, NULL, _IONBF, 0);
 	setvbuf(stderr, NULL, _IONBF, 0);
-	char x;
-	printf("Enter a letter you want to check:");
-	scanf("%c",&x);
-	if((x=='o')||(x=='O')||(x=='i')||(x=='I')||(x=='e')||(x=='E')||(x=='a')||(x=='A')||(x=='u')||(x=='U')){
-		printf("%c is vowel",x);
+	float x,y,z;
+	printf("Enter three numbers:");
+	scanf("%f",&x);
+	scanf("%f",&y);
+	scanf("%f",&z);
+	if(x>y){
+		if(x>z){
+			printf("Largest number=%f",x);
+		}
+		else{
+			printf("Largest number=%f",z);
+		}
 	}else{
-		printf("%c is consonant",x);
+		if(y>z){
+					printf("Largest number=%f",y);
+				}
+				else{
+					printf("Largest number=%f",z);
+				}
 	}
 	return 0;
 }
