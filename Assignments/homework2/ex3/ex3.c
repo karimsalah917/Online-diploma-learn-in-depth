@@ -1,5 +1,5 @@
 /*
- * ex2.c
+ * ex3.c
  *
  *  Created on: Sep 21, 2023
  *      Author: karim
