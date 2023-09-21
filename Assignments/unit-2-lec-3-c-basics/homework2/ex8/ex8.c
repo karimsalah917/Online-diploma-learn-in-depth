@@ -12,26 +12,39 @@
 int main(){
 	setvbuf(stdout, NULL, _IONBF, 0);
 	setvbuf(stderr, NULL, _IONBF, 0);
-	int operation,x,y;
+	float x,y;
+	char operation;
 	printf("Enter operator either + or - or * or / :");
-	scanf("%d",&operation);
+	scanf("%c",&operation);
 	printf("Enter two operands\n");
-	scanf("%d",&x);
-	scanf("%d",&y);
+	scanf("%f",&x);
+	scanf("%f",&y);
 
 	switch(operation)
 	{
 	case '+' :
 	{
-		printf("%d + %d =%d",x,y,x+y);
+		printf("%f + %f =%f",x,y,x+y);
 	}
 	break;
 	case '-' :
 	{
-		printf("%d - %d =%d",x,y,x-y);
-
+		printf("%f - %f =%f",x,y,x-y);
 	}
 	break ;
+	case '*' :
+		{
+			printf("%f * %f =%f",x,y,x*y);
+		}
+		break ;
+	case '/' :
+		{
+			printf("%f / %f =%f",x,y,x/y);
+		}
+		break ;
+	default :
+		printf("Enter a valid operand !!");
 	}
+
 return 0;
 }
